@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+            text-decoration: none;
+        }
+
+        ul li {
+            color: aqua;
+        }
+
+        .new-ol li {
+           color:greenyellow;
+           text-decoration: none;     
+        }
+        .new-ol li a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的小li</li>
+        <li>我是ol的小li</li>
+        <li>我是ol的小li</li>
+        <li><a href="#">我是孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的小li</li>
+        <li>我是ul的小li</li>
+        <li>我是ul的小li</li>
+    </ul>
+    <ol class = "new-ol">
+        <li>我是ol的小li</li>
+        <li>我是ol的小li</li>
+        <li>我是ol的小li</li>
+        <li><a href="#">我是孙子</a></li>
+    </ol>
+</body>
+
+</html>

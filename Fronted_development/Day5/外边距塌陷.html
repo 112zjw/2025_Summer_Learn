@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距塌陷</title>
+    <style>
+        /* 对于两个嵌套关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。 */
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            margin-top: 200px;
+            /* 1.添加上边框 */
+            /* border: 1px solid transparent;*/
+
+            /* 2.添加内边距 */
+            /* padding:1px; */
+
+            /* 可以为父元素添加overflow:hidden。 */
+            overflow:hidden;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

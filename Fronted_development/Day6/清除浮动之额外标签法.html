@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>额外标签法</title>
+    <style>
+        .box {
+            width: 500px;
+            background-color: purple;
+            border:1px solid purple;
+            margin:0 auto;
+        }
+        .hhh {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            float: left;
+
+        }
+        /* 最后一个元素加上clear：both */
+        .clear {
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="hhh"></div>
+        <div class="hhh"></div>
+        <div class="hhh"></div>
+        <div class="hhh"></div>
+        <div class="hhh"></div>
+        <div class="hhh"></div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 多行文本居中实例</title>
+    <style>
+        /* 基础样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 主容器 */
+        .container {
+            display: flex;
+            align-items: center;
+            /* 垂直居中 */
+            justify-content: center;
+            /* 水平居中 */
+            min-height: 200px;
+            /* 最小高度 */
+            padding: 20px;
+            /* 内边距防止文本贴边 */
+            background-color: #FFD6E0;
+            /* 浅粉色背景 */
+            border-radius: 8px;
+            /* 圆角 */
+            margin: 20px auto;
+            /* 外间距 */
+            max-width: 800px;
+            /* 最大宽度 */
+            text-align: center;
+            /* 文本居中（备用） */
+        }
+
+        /* 文本内容样式 */
+        .content {
+            max-width: 90%;
+            /* 限制文本宽度 */
+            font-size: 1.1rem;
+            line-height: 1.6;
+            /* 合理的行高 */
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            .container {
+                min-height: 150px;
+                /* 小屏幕减少高度 */
+                padding: 15px;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p>这里是多行文本内容，会完美垂直居中显示。无论文本有多少行，Flexbox 都能自动处理对齐问题。例如这里的文本足够长到需要换行，但布局依然保持居中状态。</p>
+        </div>
+    </div>
+</body>
+
+</html>

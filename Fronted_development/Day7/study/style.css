@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* 版型 */
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+.header {
+  height: 42px;
+  margin: 30px auto;
+}
+.logo {
+  width: 198px;
+  height: 42px;
+  float: left;
+}
+.nav {
+  float: left;
+  margin-left: 60px;
+}
+.nav ul li {
+  float: left;
+  margin:0 15px;
+}
+.nav ul li a {
+  display: inline-block;
+  height: 42px;
+  padding: 0 10px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #050505;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+  width: 412px;
+  height: 42px;
+  float:left;
+  margin-left:50px;
+}
+.search input {
+  float: left;
+  width: 345px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  font-size:14px;
+  padding-left: 15px;
+  outline: none
+}
+/* 未输入时的灰色提示文字 */
+.search input::placeholder {
+  color: #bfbfbf;
+}
+/* 当有输入内容时保持黑色文字 */
+.search input:not(:placeholder-shown) {
+  color: #000;
+}
+.search button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  /* 按钮默认有个边框，需要手动去掉 */
+  border:0;
+  background:url(images/fa-search.png);
+}
+.user {
+  float:right;
+  height: 42px;
+  margin-right:30px;
+  font-size:14px;
+  color:#666666;
+}
+.banner {
+  height: 421px;
+  background-color: #1c036c;
+}
+.banner .w{
+  height: 421px;
+  background:url(images/banner2.png) no-repeat top center;
+}
+.subnav {
+  float: left;
+  width: 190px;
+  height: 421px;
+  background:rgba(0,0,0,.3);
+
+}
+.subnav ul li {
+  height: 46px;
+  line-height: 46px;
+  margin:0 20px;
+}
+.subnav ul li a {
+  font-size:14px;
+  color:white;
+}
+.subnav ul li a span {
+  float:right;
+}
+.subnav ul li a:hover{
+  color:#00a4ff;
+}
+.course {
+  float: right;
+  width: 230px;
+  height: 300px;
+  margin-top: 50px;
+}
+.course h2 {
+  height: 38px;
+  line-height: 38px;
+  background-color: #9bceea;
+  color: #ffffff;
+  font-size:18px;
+  text-align: center;
+}
+.bd {
+  padding:0 20px;
+}
+.bd ul li {
+ padding:15px 0;
+ border-bottom: 1px solid #a5a5a5;
+}
+.bd ul li h4{
+font-size: 16px;
+color: #4e4e4e;
+}
+.bd ul li p {
+font-size: 12px;
+color:#a5a5a5;
+}
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+}

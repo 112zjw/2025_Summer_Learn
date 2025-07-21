@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f5f7;
+  height: 3000px;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.xue {
+  float: left;
+  margin-top: 30px;
+}
+.nav {
+  float: left;
+  height: 42px;
+  margin-left: 80px;
+}
+.nav ul li {
+  float: left;
+  margin-right: 45px;
+}
+.nav ul li a {
+  display: inline-block;
+  line-height: 42px;
+  margin-top: 28px;
+  text-align: center;
+  color: #050505;
+}
+.nav ul li a:hover {
+  border-bottom: 2px solid #00a4ff;
+}
+.search {
+  float: left;
+  width: 412px;
+  height: 42px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.search input {
+  float: left;
+  width: 345px;
+  height: 42px;
+  font-size: 14px;
+  color: #bfbfbf;
+  border: 2px solid #00a4ff;
+  padding-left: 15px;
+  border-right: 0;
+  outline: none;
+}
+.search button {
+  float: left;
+  width: 50px;
+  height: 45px;
+  border: 0;
+  background: url(images/fa-search.png);
+}
+
+.user {
+  float: left;
+  margin-top: 30px;
+  margin-left: 50px;
+  color: #666666;
+  display: flex; /* 使用flex布局 */
+  align-items: center; /* 垂直居中 */
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px; /* 添加图片和文本之间的间距 */
+}
+
+.user .text {
+  height: auto; /* 移除固定高度 */
+  width: auto; /* 移除固定宽度 */
+  line-height: normal; /* 重置行高 */
+}
+.banner {
+  height: 420px;
+  margin-top: 10px;
+  background-color: #1c036c;
+}
+.banner .w {
+  height: 420px;
+  background: url(images/banner2.png) no-repeat top center;
+}
+.subnav {
+  float: left;
+  width: 190px;
+  height: 420px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.subnav ul li {
+  height: 46px;
+  line-height: 46px; /* 行高与高度一致，确保内容垂直居中 */
+  margin: 0 20px;
+  position: relative; /* 用于定位大于号 */
+}
+
+.subnav ul li a {
+  font-size: 14px; /* 修正原代码的语法错误（font: size 14px → font-size: 14px） */
+  color: white;
+  display: block; /* 让a标签占据整行，便于hover范围扩大 */
+  padding-right: 20px; /* 给大于号预留位置，避免文字与符号重叠 */
+}
+
+.subnav ul li span {
+  /* 移除float: right，改用绝对定位 */
+  position: absolute;
+  right: 0; /* 靠右对齐 */
+  top: 2px; /* 与父元素顶部对齐，配合line-height垂直居中 */
+  color: white;
+}
+.subnav ul li:hover a,
+.subnav ul li:hover span {
+  color: #00a4ff; /* a和span同时变色 */
+}
+
+.course {
+  float: right;
+  width: 230px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.course h2 {
+  height: 38px;
+  line-height: 38px;
+  background-color: #9bceea;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+.bd {
+  padding: 0 20px;
+  background: #ffffff;
+}
+.bd ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #a5a5a5;
+}
+.bd ul li h4 {
+  font-size: 16px;
+  color: #4e4e4e;
+}
+.bd ul li p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.bd .more {
+  display: block;
+  height: 36px;
+  border: 2px solid #00a4ff;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 38px;
+  color: #00a4ff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
